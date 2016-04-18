@@ -1,0 +1,5 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onLoaded">
+  <StackLayout>
+    <button text="Open Modal" tap="btnClick" />
+  </StackLayout>
+</Page>
