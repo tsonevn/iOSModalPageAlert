@@ -1,4 +1,4 @@
-<Page loaded="loaded">
+<Page loaded="loaded" showingModally="onShownModally">
 <StackLayout id="layout" >
     <Button text="test button" tap="onTap" />
     

@@ -10,8 +10,9 @@ var test:string = "sample text";
 var closeCallback: Function;
 
 export function onShownModally(args: ShownModallyData) {
-    context = args.context;
     closeCallback = args.closeCallback;
+    console.log(closeCallback);
+    console.log()
 }
 
 export function loaded(args:EventData){
@@ -24,11 +25,11 @@ export function loaded(args:EventData){
      
      
      button.on(Button.tapEvent, function (args) {
-        // dialogs.alert({title:"test" , message :"Anything" , okButtonText:"ok"})
-        // .then(function(){
-        //     console.log("Dialog closed!");
-        //     closeCallback(test);
-        // });
+        dialogs.alert({title:"test" , message :"Anything" , okButtonText:"ok"})
+        .then(function(){
+            console.log("Dialog closed!");
+            closeCallback(test);
+        });
         
         
         
