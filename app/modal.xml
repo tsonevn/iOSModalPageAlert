@@ -1,5 +1,6 @@
 <Page loaded="loaded">
 <StackLayout id="layout" >
+    <Button text="test button" tap="onTap" />
     
 </StackLayout>
 </Page>

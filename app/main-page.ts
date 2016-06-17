@@ -8,7 +8,7 @@ export function onLoaded(args: EventData) {
     page = <Page>args.object;
 }
 export function btnClick(args){
-    page.showModal("modal", "" , function close(){
-        
+    page.showModal("modal", "" , function(arg:string){
+        console.log("value module page "+arg);
     },true); 
 }
